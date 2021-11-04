@@ -1,0 +1,25 @@
+function pairElement(str) {
+  let arr = [];
+  let arrt = ['T','A'];
+  let arra = ['A','T'];
+  let arrg = ['G','C'];
+  let arrc = ['C','G'];
+  for(let i=0; i < str.length; i++){
+    if(str[i] === 'T')
+    arr.push(arrt);
+
+    if(str[i] === 'A')
+    arr.push(arra);
+
+    if(str[i] === 'G')
+    arr.push(arrg);
+
+    if(str[i] === 'C')
+    arr.push(arrc);
+    
+  }
+  return arr;
+}
+
+let x = pairElement("GCG");
+console.log(x);
